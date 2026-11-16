@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ar" dir="rtl"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>كافيه رايق — قهوة هادية ويوم أهدى</title>
+<meta name="description" content="كافيه رايق: بُن محمّص طازج، حلويات بيتية، وجلسة تهدّي يومك.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#f6efe6;--card:#fffaf3;--ink:#2b211a;--muted:#7a6a5d;--acc:#b5651d;--acc2:#5b6b4a;--line:#e6d9c8;--on:#fff;--sh:0 18px 40px -24px rgba(60,35,15,.45);
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#17120e;--card:#211a14;--ink:#f3e9dc;--muted:#b3a392;--acc:#d98e4a;--acc2:#9db387;--line:#352b22;--on:#17120e;--sh:0 18px 40px -24px #000}}
+:root[data-theme="dark"]{--bg:#17120e;--card:#211a14;--ink:#f3e9dc;--muted:#b3a392;--acc:#d98e4a;--acc2:#9db387;--line:#352b22;--on:#17120e;--sh:0 18px 40px -24px #000}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:84px}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Tajawal,"Segoe UI",Tahoma,Arial,sans-serif;line-height:1.7;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button,input,select{font:inherit;color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 86%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;gap:24px;height:68px}
+.logo{font-weight:800;font-size:24px;letter-spacing:-.01em;margin-inline-end:auto;display:flex;align-items:center;gap:8px}.logo i{width:10px;height:10px;border-radius:50%;background:var(--acc);display:inline-block}
+nav{display:flex;gap:26px;font-weight:500;font-size:15px}nav a{color:var(--muted);transition:color .3s}nav a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:12px 24px;border-radius:999px;border:1px solid var(--acc);background:var(--acc);color:var(--on);font-weight:700;cursor:pointer;transition:transform .4s cubic-bezier(.2,1.4,.4,1),box-shadow .4s}
+.btn:hover{transform:translateY(-2px);box-shadow:var(--sh)}.btn.o{background:transparent;color:var(--ink);border-color:var(--line)}.btn.o:hover{border-color:var(--ink)}
+#mb{display:none;background:none;border:0;width:44px;height:44px;font-size:24px;cursor:pointer}
+.hero{padding:64px 0 40px}.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center}
+.kick{display:inline-block;color:var(--acc2);font-weight:700;font-size:14px;letter-spacing:.04em;margin-bottom:14px}
+h1{font-size:clamp(38px,6vw,68px);line-height:1.15;margin:0 0 18px;font-weight:800;letter-spacing:-.02em}h1 em{font-style:normal;color:var(--acc)}
+.hero p{color:var(--muted);font-size:18px;max-width:46ch;margin:0 0 28px}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.stats{display:flex;gap:34px;margin-top:38px;flex-wrap:wrap}.stats b{display:block;font-size:26px}.stats span{color:var(--muted);font-size:14px}
+.cup{position:relative;display:grid;place-items:center}.cup::before{content:"";position:absolute;width:86%;aspect-ratio:1;border-radius:50%;background:color-mix(in srgb,var(--acc) 14%,transparent)}
+.cup svg{position:relative;width:min(100%,420px);height:auto}
+.st{fill:none;stroke:var(--muted);stroke-width:5;stroke-linecap:round;opacity:0;animation:steam 3.6s ease-in-out infinite}.st:nth-of-type(2){animation-delay:1.2s}.st:nth-of-type(3){animation-delay:2.2s}
+@keyframes steam{0%{opacity:0;transform:translateY(14px)}35%{opacity:.7}100%{opacity:0;transform:translateY(-22px)}}
+section{padding:72px 0}h2{font-size:clamp(28px,4vw,40px);margin:0 0 10px;font-weight:800;letter-spacing:-.01em}.lead{color:var(--muted);margin:0 0 34px;max-width:52ch}
+.feat{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:22px;padding:26px;transition:transform .5s cubic-bezier(.16,1,.3,1),box-shadow .5s}.card:hover{transform:translateY(-4px);box-shadow:var(--sh)}
+.card .ic{font-size:30px;margin-bottom:10px}.card h3{margin:0 0 6px;font-size:19px}.card p{margin:0;color:var(--muted);font-size:15px}
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:26px}.tab{padding:10px 20px;border-radius:999px;border:1px solid var(--line);background:transparent;cursor:pointer;font-weight:500;transition:.3s}
+.tab:hover{border-color:var(--ink)}.tab[aria-selected=true]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.menu{display:grid;grid-template-columns:repeat(2,1fr);gap:14px 28px}
+.it{display:flex;gap:14px;align-items:baseline;padding:16px 0;border-bottom:1px dashed var(--line);animation:up .6s cubic-bezier(.16,1,.3,1) backwards}
+.it div{flex:1}.it h4{margin:0;font-size:18px}.it p{margin:2px 0 0;color:var(--muted);font-size:14px}.it b{color:var(--acc);white-space:nowrap}
+@keyframes up{from{opacity:0;transform:translateY(12px)}}
+.info{display:grid;grid-template-columns:1fr 1fr;gap:22px}.hrs{list-style:none;margin:0;padding:0}.hrs li{display:flex;justify-content:space-between;padding:10px 0;border-bottom:1px dashed var(--line)}.hrs li:last-child{border:0}
+.map{border-radius:18px;min-height:160px;margin-top:16px;display:grid;place-items:center;background:repeating-linear-gradient(45deg,color-mix(in srgb,var(--acc2) 12%,transparent) 0 14px,transparent 14px 28px);border:1px solid var(--line);color:var(--muted);font-size:14px;text-align:center;padding:12px}
+form{display:grid;gap:14px}.row{display:grid;grid-template-columns:1fr 1fr;gap:12px}label{font-size:14px;color:var(--muted);display:grid;gap:6px}
+input,select{background:var(--bg);border:1px solid var(--line);border-radius:12px;padding:12px 14px;min-height:46px;width:100%}input:focus,select:focus{outline:2px solid var(--acc);outline-offset:1px}
+#ok{display:none;padding:14px 16px;border-radius:14px;background:color-mix(in srgb,var(--acc2) 18%,transparent);color:var(--ink);animation:up .6s backwards}
+footer{border-top:1px solid var(--line);padding:30px 0;color:var(--muted);font-size:14px}footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+.js .rv{opacity:0;transform:translateY(22px);transition:opacity 1s cubic-bezier(.16,1,.3,1),transform 1s cubic-bezier(.16,1,.3,1)}.js .rv.in{opacity:1;transform:none}
+button:focus-visible,a:focus-visible{outline:2px solid var(--acc);outline-offset:3px}
+@media(max-width:820px){.hero .wrap,.info{grid-template-columns:1fr}.cup{order:-1}.cup svg{width:min(78%,300px)}.feat,.menu{grid-template-columns:1fr}
+nav{position:absolute;top:68px;inset-inline:0;background:var(--bg);flex-direction:column;gap:0;padding:6px 22px 14px;border-bottom:1px solid var(--line);display:none}nav.open{display:flex}nav a{padding:12px 0}#mb{display:block}header .btn{display:none}.row{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.js .rv{opacity:1;transform:none}.st{opacity:.5}}
+</style></head><body>
+<header><div class="wrap"><a class="logo" href="#top"><i></i>كافيه رايق</a>
+<nav id="nv"><a href="#about">عنّا</a><a href="#menu">المنيو</a><a href="#visit">زورنا</a><a href="#book">احجز</a></nav>
+<a class="btn" href="#book">احجز طاولتك</a><button id="mb" aria-label="القائمة" aria-expanded="false">☰</button></div></header>
+<main id="top">
+<div class="hero"><div class="wrap"><div>
+<span class="kick">بُن محمّص طازج كل يوم</span>
+<h1>فنجان <em>يهدّي</em> يومك</h1>
+<p>مكان هادي بإضاءة دافية، وقهوة متحضّرة على مهلها، وحلويات بيتية. تعالى خد استراحة من الزحمة.</p>
+<div class="cta"><a class="btn" href="#menu">شوف المنيو</a><a class="btn o" href="#book">احجز طاولتك</a></div>
+<div class="stats"><div><b>12</b><span>نوع قهوة مختصة</span></div><div><b>4.9</b><span>تقييم الزوّار</span></div><div><b>7ص–12م</b><span>كل يوم</span></div></div>
+</div>
+<div class="cup" aria-hidden="true"><svg viewBox="0 0 300 300"><ellipse cx="150" cy="248" rx="112" ry="22" fill="var(--line)"/><ellipse cx="150" cy="240" rx="96" ry="17" fill="var(--card)" stroke="var(--line)" stroke-width="3"/>
+<path d="M82 128h136v54c0 38-30 62-68 62s-68-24-68-62z" fill="var(--card)" stroke="var(--ink)" stroke-width="5" stroke-linejoin="round"/>
+<path d="M218 144h20c18 0 18 40 0 40h-26" fill="none" stroke="var(--ink)" stroke-width="5" stroke-linecap="round"/>
+<ellipse cx="150" cy="128" rx="68" ry="12" fill="var(--acc)" stroke="var(--ink)" stroke-width="5"/><path d="M120 128q30-10 60 0" fill="none" stroke="var(--card)" stroke-width="4" stroke-linecap="round" opacity=".6"/>
+<path d="M82 170h136" stroke="var(--acc2)" stroke-width="6" opacity=".5"/>
+<path class="st" d="M122 98q-14-16 0-32t0-30"/><path class="st" d="M150 94q-14-16 0-32t0-30"/><path class="st" d="M178 98q-14-16 0-32t0-30"/></svg></div></div></div>
+<section id="about"><div class="wrap"><h2 class="rv">مكان بسيط… ورايق</h2><p class="lead rv">بنختار البُن بنفسنا ونحمّصه على دفعات صغيرة، عشان كل كوباية تطلع بطعمها الصح.</p>
+<div class="feat"><div class="card rv"><div class="ic">☕</div><h3>بُن مختار</h3><p>حبوب من مزارع مختلفة، بتحميص متوسط يطلّع النكهة من غير مرارة.</p></div>
+<div class="card rv"><div class="ic">🌿</div><h3>جلسة هادية</h3><p>موسيقى خفيفة، نباتات، ومقاعد مريحة للقراءة أو الشغل.</p></div>
+<div class="card rv"><div class="ic">🍰</div><h3>حلويات بيتية</h3><p>بتتعمل كل صبح بمكونات بسيطة وطازجة، بعيد عن الجاهز.</p></div></div></div></section>
+<section id="menu" style="background:color-mix(in srgb,var(--card) 60%,transparent)"><div class="wrap"><h2 class="rv">المنيو</h2><p class="lead rv">الأسعار بالجنيه المصري.</p>
+<div class="tabs" role="tablist" id="tabs"></div><div class="menu" id="list" role="tabpanel"></div></div></section>
+<section id="visit"><div class="wrap info"><div class="card rv"><h2 style="font-size:26px">مواعيدنا</h2>
+<ul class="hrs"><li><span>السبت – الأربعاء</span><b>7:00 ص – 12:00 م</b></li><li><span>الخميس</span><b>7:00 ص – 1:00 ص</b></li><li><span>الجمعة</span><b>1:00 م – 1:00 ص</b></li></ul>
+<div class="map">شارع الورد، وسط البلد، القاهرة<br>(عنوان تجريبي للعرض)</div></div>
+<div class="card rv" id="book"><h2 style="font-size:26px">احجز طاولتك</h2>
+<form id="f"><label>الاسم<input name="n" required autocomplete="name"></label>
+<div class="row"><label>التاريخ<input type="date" name="d" required></label><label>الوقت<input type="time" name="t" required value="18:00"></label></div>
+<label>عدد الأشخاص<select name="g"><option>1</option><option selected>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select></label>
+<button class="btn" type="submit">تأكيد الحجز</button><div id="ok" role="status" aria-live="polite"></div></form></div></div></section>
+</main>
+<footer><div class="wrap"><span>© كافيه رايق — موقع تجريبي للعرض</span><span>صُمم وبُرمج بـ HTML وCSS وJavaScript</span></div></footer>
+<script>
+document.documentElement.classList.add('js');
+const M={'قهوة ساخنة':[['إسبريسو','شوت مركّز بكريما ذهبية',45],['كابتشينو','حليب مخفوق ورغوة ناعمة',65],['فلات وايت','قهوة قوية بحليب مخملي',70],['قهوة تركي','على الرمل بالطريقة التقليدية',50]],
+'قهوة مثلجة':[['آيس لاتيه','إسبريسو وحليب بارد وثلج',75],['كولد برو','منقوعة 18 ساعة، ناعمة وهادية',80],['آيس كراميل ماكياتو','كراميل وفانيليا',85],['فرابيه','مخفوقة وكريمة خفيفة',90]],
+'مشروبات أخرى':[['شاي بالنعناع','ورق نعناع طازج',40],['هوت شوكلت','كاكاو بلدي وكريمة',70],['ليمون بالنعناع','فريش ومنعش',55],['ماتشا لاتيه','ماتشا يابانية بالحليب',85]],
+'حلويات':[['تشيز كيك','بصوص التوت',90],['براوني دافئ','مع آيس كريم فانيليا',85],['كرواسون باللوز','يتخبز كل صبح',60],['كوكيز الشوكولاتة','قطع شوكولاتة كبيرة',45]]};
+const tabs=document.getElementById('tabs'),list=document.getElementById('list');let cur=Object.keys(M)[0];
+const draw=()=>{[...tabs.children].forEach(b=>b.setAttribute('aria-selected',b.textContent===cur));list.innerHTML='';M[cur].forEach((x,i)=>{const e=document.createElement('div');e.className='it';e.style.animationDelay=i*70+'ms';
+const d=document.createElement('div'),h=document.createElement('h4'),p=document.createElement('p'),b=document.createElement('b');h.textContent=x[0];p.textContent=x[1];b.textContent=x[2]+' ج';d.append(h,p);e.append(d,b);list.append(e)})};
+Object.keys(M).forEach(k=>{const b=document.createElement('button');b.className='tab';b.role='tab';b.textContent=k;b.onclick=()=>{cur=k;draw()};tabs.append(b)});draw();
+const nv=document.getElementById('nv'),mb=document.getElementById('mb');mb.onclick=()=>{const o=nv.classList.toggle('open');mb.setAttribute('aria-expanded',o)};nv.onclick=e=>{if(e.target.tagName==='A'){nv.classList.remove('open');mb.setAttribute('aria-expanded',false)}};
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+const f=document.getElementById('f'),ok=document.getElementById('ok');f.querySelector('[name=d]').min=new Date().toISOString().slice(0,10);
+f.onsubmit=e=>{e.preventDefault();const v=new FormData(f);ok.style.display='block';ok.textContent='تم تسجيل طلبك يا '+v.get('n')+'، '+v.get('g')+' أشخاص يوم '+v.get('d')+' الساعة '+v.get('t')+'. (نموذج تجريبي ولا يُرسل أي بيانات)';f.reset()};
+</script></body></html>
